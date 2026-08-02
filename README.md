@@ -2,7 +2,7 @@
 
 > Secure messaging. No trace.
 
-**Part of DACnetwork.io** | **Version:** 1.4.x | **Platform:** Android | **Status:** 🚀 Beta Launch
+**Part of DACnetwork.io** | **Version:** 1.5.2 | **Platform:** Android | **Status:** 🚀 Beta Launch
 
 ---
 
