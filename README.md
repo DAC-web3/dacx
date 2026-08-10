@@ -2,7 +2,7 @@
 
 > Secure messaging. No trace.
 
-**Part of DACnetwork.io** | **Version:** 1.5.2 | **Platform:** Android | **Status:** 🚀 Beta Launch
+**Part of DACnetwork.io** | **Version:** 1.5.6 | **Platform:** Android | **Status:** 🚀 Beta Live
 
 ---
 
@@ -26,18 +26,42 @@ DACx is how DACnetwork members speak to each other — directly, by mutual conse
 | 💰 Solana Wallet | Self-custody wallet bound to xID + PIN |
 | 📞 Voice Calls | WebRTC voice calls with push notifications |
 | 🔔 Push Notifications | FCM notifications when app is closed |
+| 🔄 OTA Updates | Automatic updates — no reinstall needed |
 
 ---
 
 ## Download
 
-👉 **[Download DACx Beta APK](https://github.com/DAC-web3/dacx/releases/latest)**
+👉 **[Download DACx v1.5.6 APK](https://github.com/DAC-web3/dacx/releases/latest)**
 
 **How to install:**
 1. Download the APK file
 2. Go to Android Settings → Security → Enable "Install unknown apps"
 3. Open the APK and install
 4. Launch DACx and create your xID
+
+---
+
+## OTA Updates — How it works
+
+Starting from v1.5.6, DACx supports **Over-The-Air (OTA) updates**.
+
+| Situation | What happens |
+|-----------|-------------|
+| You install v1.5.6 once | Base installed — OTA ready |
+| New JS/UI update released | App updates automatically on next open |
+| New native APK released | App shows alert → download new APK from GitHub |
+| Running v1.5.3–1.5.5 | Must install v1.5.6 once to receive OTA updates |
+
+**What updates automatically (OTA):**
+- UI changes, bug fixes, new screens
+- Chat logic, notifications
+- Most features and improvements
+
+**What requires a new APK:**
+- Major native/SDK changes
+- New permissions or native modules
+- Significant architecture changes
 
 ---
 
@@ -67,7 +91,7 @@ DACx is how DACnetwork members speak to each other — directly, by mutual conse
 | Phase | Milestone |
 |-------|-----------|
 | Phase 0 ✅ | MVP, server, xID identity |
-| Phase 1 🚧 | Public beta, 1,000+ xIDs |
+| Phase 1 🚧 | Public beta v1.5.6, OTA updates, 1,000+ xIDs |
 | Phase 2 | Mainnet wallet, multi-app xID |
 | Phase 3 | E2EE encryption, $DAC payments |
 | Phase 4 | DAO governance, full interoperability |
