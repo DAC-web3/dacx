@@ -27,6 +27,11 @@ DACx is how DACnetwork members speak to each other — directly, by mutual conse
 | 📞 Voice Calls | WebRTC voice calls with push notifications |
 | 🔔 Push Notifications | FCM notifications when app is closed |
 | 🔄 OTA Updates | Automatic updates — no reinstall needed |
+| 😀 24 Reactions | Long-press any message to react or delete |
+| 🔒 PIN Vault | 6-dot keypad, auto-lock, lockout protection |
+| 🎨 SVG Icons | Custom icon set — no system emoji in UI |
+| 🟢 Identity Avatars | Color derived from xID — unique per user |
+| 🛡️ Privacy Cover | App switcher shows only logo — no chat visible |
 
 ---
 
