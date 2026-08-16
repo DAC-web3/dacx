@@ -91,6 +91,7 @@ Starting from v1.5.6, DACx supports Over-The-Air (OTA) updates.
 - **Phrase restore live** — same xID or a new xID, same Solana address
 - Phrase never sent to the server
 - Wallet badge: **DEVNET** — not $DAC mainnet
+- Settings → Link rutaX (signed attest, 15 min). Typed xID on rutaX is rejected
 
 **What updates automatically (OTA):**
 - UI changes, bug fixes, new screens
@@ -109,6 +110,7 @@ Starting from v1.5.6, DACx supports Over-The-Air (OTA) updates.
 3. **Your xID is created** — 9-digit identity, no phone or email
 4. **Add contacts** — scan QR (`dacx://add/…`) or enter an xID; they get a request
 5. **Communicate** — messages disappear 3 minutes after being read
+6. **Link rutaX (optional):** Settings → Link rutaX → paste the Phantom address from rutaX → paste the token into rutaX Profile
 
 **Restore (Welcome / Login → Restore with recovery phrase):**
 - **I have my xID:** 12 words + xID + PIN → same xID, same Solana address
@@ -132,6 +134,7 @@ Existing accounts (key still on the server) still sign in with xID + PIN. Restor
 ## xID — Universal DACnetwork Identity
 
 xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) — IN DEVELOPMENT ├─ DACmeta (social / VR) — PLANNED └─ DAC Smart Systems (nodes) — RESEARCH
+| Link rutaX | ✅ Live | Settings → Link rutaX. Signed attest to a Phantom address. One xID, one wallet |
 
 ---
 
