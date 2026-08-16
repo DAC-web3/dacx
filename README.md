@@ -135,7 +135,6 @@ Existing accounts (key still on the server) still sign in with xID + PIN. Restor
 ## xID — Universal DACnetwork Identity
 
 xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) — IN DEVELOPMENT ├─ DACmeta (social / VR) — PLANNED └─ DAC Smart Systems (nodes) — RESEARCH
-| Link rutaX | ✅ Live | Settings → Link rutaX. Signed attest to a Phantom address. One xID, one wallet |
 
 ---
 
