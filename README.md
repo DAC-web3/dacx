@@ -40,7 +40,8 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 | Message requests | ✅ Live | Add by QR or xID; they accept or ignore |
 | Ephemeral messages | ✅ Live | Disappear 3 minutes after read/view |
 | Solana wallet | ✅ Live | **Devnet.** New accounts create the key on this phone |
-| 12-word phrase | ✅ Shown | Shown at signup. **Restore is not available yet** |
+| 12-word phrase | ✅ Live | Shown at signup. Recovers the wallet |
+| Phrase restore | ✅ Live | Welcome / Login → Restore with recovery phrase |
 | Push notifications | ✅ Live | FCM when the app is closed |
 | OTA updates | ✅ Live | Automatic JS/UI updates — no reinstall needed |
 | PIN lock | ✅ Live | Required on every app open (4–6 digits) |
@@ -48,7 +49,6 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 | Auto-lock | ✅ Live | Configurable timer (5/15/60 min) |
 | Reactions + delete | ✅ Live | Long-press any message |
 | Voice calls | ⏸ Hidden | Not offered in the current UI |
-| Phrase restore | 📋 Not yet | 12 words are preparation, not recovery |
 | $DAC mainnet | 📋 Not yet | Wallet is Devnet SOL only |
 | E2EE | 📋 Not yet | Messages pass through DACx servers until they disappear |
 
@@ -88,6 +88,8 @@ Starting from v1.5.6, DACx supports Over-The-Air (OTA) updates.
 - PIN: one field, 4–6 digits
 - QR: full-screen camera; accepts `dacx://add/…` and plain xID
 - New accounts: key created on device, 12 words + 3-word confirm
+- **Phrase restore live** — same xID or a new xID, same Solana address
+- Phrase never sent to the server
 - Wallet badge: **DEVNET** — not $DAC mainnet
 
 **What updates automatically (OTA):**
@@ -103,12 +105,17 @@ Starting from v1.5.6, DACx supports Over-The-Air (OTA) updates.
 ## How it works
 
 1. **Choose a username and PIN**
-2. **Write down 12 words** and confirm 3 of them — DACx cannot recover them
+2. **Write down 12 words** and confirm 3 of them — they recover the wallet
 3. **Your xID is created** — 9-digit identity, no phone or email
 4. **Add contacts** — scan QR (`dacx://add/…`) or enter an xID; they get a request
 5. **Communicate** — messages disappear 3 minutes after being read
 
-Existing accounts (created before this OTA) still sign in with xID + PIN as before.
+**Restore (Welcome / Login → Restore with recovery phrase):**
+- **I have my xID:** 12 words + xID + PIN → same xID, same Solana address
+- **New xID:** 12 words + username + PIN → new xID, same wallet address
+- The phrase never leaves the phone
+
+Existing accounts (key still on the server) still sign in with xID + PIN. Restore on those accounts tells you to use normal login.
 
 ---
 
@@ -116,9 +123,9 @@ Existing accounts (created before this OTA) still sign in with xID + PIN as befo
 
 - **New accounts:** the Solana key is created on the phone. The server stores only the public address.
 - **Network:** Solana **Devnet**. Test SOL only. Not $DAC on mainnet.
-- **12 words:** shown once at signup so you can write them down.
-- **Restore from those words is not built yet.** If you lose this phone and the local key, the wallet cannot be recovered in-app.
-- This is not Phantom-style self-custody until restore exists.
+- **12 words:** shown at signup. They recover the wallet.
+- **Restore is live** for those on-device keys.
+- Old accounts keep the previous login. They cannot use phrase restore.
 
 ---
 
@@ -145,7 +152,7 @@ xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) �
 | Phase | Status | Milestones |
 |-------|--------|------------|
 | Phase 0 | ✅ Done | MVP, xID identity, Android Beta v1.5.6, OTA updates |
-| Phase 1 | 🔄 In progress | 1,000+ xIDs, iOS version, phrase restore, expanded features |
+| Phase 1 | 🔄 In progress | 1,000+ xIDs, iOS version, expanded features |
 | Phase 2 | 📋 Planned | Mainnet wallet integration, multi-app xID |
 | Phase 3 | 📋 Planned | E2EE encryption, $DAC payments in chat |
 | Phase 4 | 📋 Planned | DAO governance integration |
@@ -158,6 +165,7 @@ xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) �
 - DACx does not collect email addresses
 - DACx does not sell user data
 - DACx does not monetize user behavior
+- The recovery phrase is never sent to the server
 - Messages are **not end-to-end encrypted yet**
 - Unread messages are held on DACx servers until they are read, then deleted after 3 minutes
 - After that, conversation content is not kept as a permanent archive
