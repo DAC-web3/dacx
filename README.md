@@ -37,6 +37,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 | Feature | Status | Description |
 |---------|--------|-------------|
 | xID Identity | ✅ Live | 9-digit network identity — no phone, no email |
+| Link rutaX | ✅ Live | Settings → Link rutaX. Signed attest to a Phantom address. One xID, one wallet |
 | Message requests | ✅ Live | Add by QR or xID; they accept or ignore |
 | Ephemeral messages | ✅ Live | Disappear 3 minutes after read/view |
 | Solana wallet | ✅ Live | **Devnet.** New accounts create the key on this phone |
@@ -83,6 +84,7 @@ Starting from v1.5.6, DACx supports Over-The-Air (OTA) updates.
 | Running v1.5.3–1.5.5 | Must install v1.5.6 once first |
 
 **Latest OTA (16 August 2026), runtime 1.5.6:**
+- Settings → Link rutaX (signed attest, 15 min). Typed xID on rutaX is rejected
 - Home: glass header, logo, xID, SOL, QR / card / settings
 - Chat: unread fix, composer reset, system back stays in-app
 - PIN: one field, 4–6 digits
@@ -91,7 +93,6 @@ Starting from v1.5.6, DACx supports Over-The-Air (OTA) updates.
 - **Phrase restore live** — same xID or a new xID, same Solana address
 - Phrase never sent to the server
 - Wallet badge: **DEVNET** — not $DAC mainnet
-- Settings → Link rutaX (signed attest, 15 min). Typed xID on rutaX is rejected
 
 **What updates automatically (OTA):**
 - UI changes, bug fixes, new screens
