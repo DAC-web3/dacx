@@ -1,6 +1,6 @@
 # DACx
 
-> Ephemeral messaging. Honest about what we store.
+> Secure messaging. No trace.
 
 **Part of DACnetwork.io** | **Version:** 1.5.6 | **Platform:** Android | **Status:** ✅ Beta Live
 
@@ -10,7 +10,7 @@
 
 DACx is the private communication and identity layer of the DACnetwork ecosystem.
 
-DACx is how DACnetwork members speak to each other — directly, by mutual consent, and ephemerally.
+Ephemeral messaging. Honest about what we store.
 
 > *Communication must not become an archive. It must remain consent and moment.*
 
@@ -37,21 +37,36 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 | Feature | Status | Description |
 |---------|--------|-------------|
 | xID Identity | ✅ Live | 9-digit network identity — no phone, no email |
-| Link rutaX | ✅ Live | Settings → Link rutaX. Signed attest to a Phantom address. One xID, one wallet |
-| Message requests | ✅ Live | Add by QR or xID; they accept or ignore |
-| Ephemeral messages | ✅ Live | Disappear 3 minutes after read/view |
-| Solana wallet | ✅ Live | **Devnet.** New accounts create the key on this phone |
-| 12-word phrase | ✅ Live | Shown at signup. Recovers the wallet |
-| Phrase restore | ✅ Live | Welcome / Login → Restore with recovery phrase |
-| Push notifications | ✅ Live | FCM when the app is closed |
-| OTA updates | ✅ Live | Automatic JS/UI updates — no reinstall needed |
-| PIN lock | ✅ Live | Required on every app open (4–6 digits) |
-| Privacy cover | ✅ Live | App switcher shows only the logo |
+| Message Requests | ✅ Live | Add by QR or xID; they accept or ignore |
+| Ephemeral Messages | ✅ Live | Disappear 3 minutes after read/view |
+| Devnet Wallet | ✅ Live | On-device Solana key — 12-word seed phrase |
+| Wallet Restore | ✅ Live | Same or new xID, same Solana address |
+| DAC Balance | ✅ Live | Devnet DAC (Token-2022) visible in wallet |
+| Send DAC / SOL | ✅ Live | Separate tabs in wallet screen |
+| Hide Home Balance | ✅ Live | Eye toggle on chip — persists |
+| OTA Updates | ✅ Live | Automatic updates — no reinstall needed |
+| PIN Vault | ✅ Live | Required on every app open, memory-only |
+| Privacy Cover | ✅ Live | App switcher shows only logo |
 | Auto-lock | ✅ Live | Configurable timer (5/15/60 min) |
-| Reactions + delete | ✅ Live | Long-press any message |
-| Voice calls | ⏸ Hidden | Not offered in the current UI |
-| $DAC mainnet | 📋 Not yet | Wallet is Devnet SOL only |
-| E2EE | 📋 Not yet | Messages pass through DACx servers until they disappear |
+| 24 Reactions | ✅ Live | Long-press any message |
+| Delete for Both | ✅ Live | Removes message for both users |
+| SVG Icon Set | ✅ Live | Custom stroke icons throughout |
+| Identity Avatars | ✅ Live | Color derived from xID |
+| Link rutaX | ✅ Live | Settings → Link rutaX — links xID to rutaX |
+| Voice Calls | ⏸ Not in current UI | Skipped intentionally |
+| $DAC Mainnet | 📋 Not yet | Devnet only |
+| E2EE | 📋 Roadmap | Not yet implemented |
+
+---
+
+## Wallet — Important Notes
+
+- **Devnet only** — not mainnet $DAC (`4m9XHiFaZcoUiMxaJH9DbxSXJXuQuXASw3q35hZPjghb`)
+- Devnet DAC Mint: `8NeGLu1s8jQjvrtgpTKPMkGg71NKKpwaMthhUSkfLatR`
+- Seed phrase never sent to the server
+- Sending DAC requires a small amount of Devnet SOL for fees
+- Cash-out from rutaX goes to Phantom/Solflare connected in rutaX — not DACx wallet
+- Old accounts still use xID + PIN (not seed phrase)
 
 ---
 
@@ -59,16 +74,14 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 
 👉 **[Download DACx v1.5.6 APK](https://github.com/DAC-web3/dacx/releases/latest)**
 
-Or download from the official website: **[www.dacnetwork.io](https://www.dacnetwork.io)**
+Or download from the official website: **www.dacnetwork.io**
 
 **How to install:**
 1. Download the APK file
 2. Go to Android Settings → Security → Enable "Install unknown apps"
 3. Open the APK and install
-4. Launch DACx, write down your 12 words, then create your xID
-5. Set your PIN and start communicating
-
-Already on **v1.5.6**? Close and reopen the app to receive the latest OTA. No new APK needed.
+4. Launch DACx and create your xID
+5. Set your personal PIN and start communicating
 
 ---
 
@@ -76,65 +89,35 @@ Already on **v1.5.6**? Close and reopen the app to receive the latest OTA. No ne
 
 Starting from v1.5.6, DACx supports Over-The-Air (OTA) updates.
 
-| Situation | What happens |
-|-----------|-------------|
-| Install v1.5.6 once | Base installed — OTA ready |
-| New JS/UI update released | App updates automatically on next open |
-| New native APK released | App shows alert → download new APK |
-| Running v1.5.3–1.5.5 | Must install v1.5.6 once first |
+| Release | What changed |
+|---------|-------------|
+| v1.5.6-ota-2 | Devnet DAC wallet, hide Home balance |
+| v1.5.6-ota-1 | Security & UI Premium, PIN Vault, 24 reactions |
+| v1.5.6 | Base APK — OTA channel enabled |
 
-**Latest OTA (16 August 2026), runtime 1.5.6:**
-- Settings → Link rutaX (signed attest, 15 min). Typed xID on rutaX is rejected
-- Home: glass header, logo, xID, SOL, QR / card / settings
-- Chat: unread fix, composer reset, system back stays in-app
-- PIN: one field, 4–6 digits
-- QR: full-screen camera; accepts `dacx://add/…` and plain xID
-- New accounts: key created on device, 12 words + 3-word confirm
-- **Phrase restore live** — same xID or a new xID, same Solana address
-- Phrase never sent to the server
-- Wallet badge: **DEVNET** — not $DAC mainnet
-
-**What updates automatically (OTA):**
-- UI changes, bug fixes, new screens
-- Chat logic, notifications, features
-
-**What requires a new APK:**
-- Major native/SDK changes
-- New permissions or native modules
+**How to update:**
+Open DACx → Settings → Check for updates → Restart.
+Or force-close the app and reopen.
 
 ---
 
 ## How it works
 
-1. **Choose a username and PIN**
-2. **Write down 12 words** and confirm 3 of them — they recover the wallet
-3. **Your xID is created** — 9-digit identity, no phone or email
-4. **Add contacts** — scan QR (`dacx://add/…`) or enter an xID; they get a request
-5. **Communicate** — messages disappear 3 minutes after being read
-6. **Link rutaX (optional):** Settings → Link rutaX → paste the Phantom address from rutaX → paste the token into rutaX Profile
-
-**Restore (Welcome / Login → Restore with recovery phrase):**
-- **I have my xID:** 12 words + xID + PIN → same xID, same Solana address
-- **New xID:** 12 words + username + PIN → new xID, same wallet address
-- The phrase never leaves the phone
-
-Existing accounts (key still on the server) still sign in with xID + PIN. Restore on those accounts tells you to use normal login.
-
----
-
-## Wallet — what is true today
-
-- **New accounts:** the Solana key is created on the phone. The server stores only the public address.
-- **Network:** Solana **Devnet**. Test SOL only. Not $DAC on mainnet.
-- **12 words:** shown at signup. They recover the wallet.
-- **Restore is live** for those on-device keys.
-- Old accounts keep the previous login. They cannot use phrase restore.
+1. **Create your xID** — 9-digit unique identity, no phone or email
+2. **Set your PIN** — personal key, required on every open
+3. **Add contacts** — via QR scan or manual xID entry (mutual consent)
+4. **Communicate** — messages disappear 3 minutes after being read
+5. **Link rutaX** — Settings → Link rutaX to connect your xID
 
 ---
 
 ## xID — Universal DACnetwork Identity
 
-xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) — IN DEVELOPMENT ├─ DACmeta (social / VR) — PLANNED └─ DAC Smart Systems (nodes) — RESEARCH
+xID
+├─ DACx (messaging + wallet) — LIVE
+├─ rutaX (Proof of Activity) — IN DEVELOPMENT
+├─ DACmeta (social / VR) — PLANNED
+└─ DAC Smart Systems (nodes) — RESEARCH
 
 ---
 
@@ -142,11 +125,11 @@ xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) �
 
 | Layer | Product | Status |
 |-------|---------|--------|
-| Activity | rutaX | 🔄 IN DEVELOPMENT |
+| Activity | rutaX | 🔄 IN DEVELOPMENT — Devnet API live |
 | Physical | DAC Smart Systems | 🔬 RESEARCH |
 | Social | DACmeta | 📋 PLANNED |
 | **Communication** | **DACx** | **✅ BETA v1.5.6** |
-| Economic | $DAC | ✅ LIVE — Solana Mainnet (not yet inside DACx) |
+| Economic | $DAC | ✅ LIVE — Solana Mainnet |
 
 ---
 
@@ -154,7 +137,7 @@ xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) �
 
 | Phase | Status | Milestones |
 |-------|--------|------------|
-| Phase 0 | ✅ Done | MVP, xID identity, Android Beta v1.5.6, OTA updates |
+| Phase 0 | ✅ Done | MVP, xID, Android Beta v1.5.6, OTA, Devnet wallet |
 | Phase 1 | 🔄 In progress | 1,000+ xIDs, iOS version, expanded features |
 | Phase 2 | 📋 Planned | Mainnet wallet integration, multi-app xID |
 | Phase 3 | 📋 Planned | E2EE encryption, $DAC payments in chat |
@@ -166,12 +149,10 @@ xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) �
 
 - DACx does not collect phone numbers
 - DACx does not collect email addresses
+- DACx does not store conversation content on centralized servers
 - DACx does not sell user data
 - DACx does not monetize user behavior
-- The recovery phrase is never sent to the server
-- Messages are **not end-to-end encrypted yet**
-- Unread messages are held on DACx servers until they are read, then deleted after 3 minutes
-- After that, conversation content is not kept as a permanent archive
+- Seed phrase never leaves the device
 
 ---
 
@@ -186,3 +167,4 @@ xID ├─ DACx (messaging + wallet) — LIVE ├─ rutaX (Proof of Activity) �
 
 *DACx • Asociația DACnetwork Web3 • București, România*
 *$DAC is a utility token and does not represent an investment.*
+*Devnet DAC is not mainnet $DAC.*
