@@ -1,6 +1,6 @@
 # DACx
 
-> Secure messaging. No trace.
+> Ephemeral messaging. Honest about what we store.
 
 **Part of DACnetwork.io** | **Version:** 1.5.6 | **Platform:** Android | **Status:** ✅ Beta Live
 
@@ -74,7 +74,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 
 👉 **[Download DACx v1.5.6 APK](https://github.com/DAC-web3/dacx/releases/latest)**
 
-Or download from the official website: **www.dacnetwork.io**
+Or download from the official website: **[dacnetwork.io](https://dacnetwork.io)**
 
 **How to install:**
 1. Download the APK file
@@ -96,7 +96,7 @@ Starting from v1.5.6, DACx supports Over-The-Air (OTA) updates.
 | v1.5.6 | Base APK — OTA channel enabled |
 
 **How to update:**
-Open DACx → Settings → Check for updates → Restart.
+Open DACx → Settings → Check for updates → Restart.  
 Or force-close the app and reopen.
 
 ---
@@ -105,7 +105,7 @@ Or force-close the app and reopen.
 
 1. **Create your xID** — 9-digit unique identity, no phone or email
 2. **Set your PIN** — personal key, required on every open
-3. **Add contacts** — via QR scan or manual xID entry (mutual consent)
+3. **Add contacts** — via QR scan or xID; they get a request and can accept or ignore
 4. **Communicate** — messages disappear 3 minutes after being read
 5. **Link rutaX** — Settings → Link rutaX to connect your xID
 
@@ -113,11 +113,13 @@ Or force-close the app and reopen.
 
 ## xID — Universal DACnetwork Identity
 
+```
 xID
 ├─ DACx (messaging + wallet) — LIVE
 ├─ rutaX (Proof of Activity) — IN DEVELOPMENT
 ├─ DACmeta (social / VR) — PLANNED
 └─ DAC Smart Systems (nodes) — RESEARCH
+```
 
 ---
 
@@ -149,10 +151,14 @@ xID
 
 - DACx does not collect phone numbers
 - DACx does not collect email addresses
-- DACx does not store conversation content on centralized servers
 - DACx does not sell user data
 - DACx does not monetize user behavior
-- Seed phrase never leaves the device
+- The recovery phrase is never sent to the server
+- Messages are **not end-to-end encrypted yet**
+- Unread messages are held on DACx servers until they are read, then deleted after 3 minutes
+- After that, conversation content is not kept as a permanent archive
+
+DACx does **not** claim that conversation content never touches a server.
 
 ---
 
@@ -165,6 +171,6 @@ xID
 
 ---
 
-*DACx • Asociația DACnetwork Web3 • București, România*
+*DACx • Asociația DACnetwork Web3 (registration in progress) • București, România*
 *$DAC is a utility token and does not represent an investment.*
 *Devnet DAC is not mainnet $DAC.*
