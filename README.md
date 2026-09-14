@@ -2,7 +2,7 @@
 
 > Ephemeral messaging. Honest about what we store.
 
-**Part of DACnetwork.io** | **Version:** 1.5.6 | **Platform:** Android | **Status:** ✅ Beta Live
+**Part of DACnetwork.io** | **Version:** 1.5.7 | **Platform:** Android | **Status:** ✅ Beta Live
 
 ---
 
@@ -32,7 +32,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 
 ---
 
-## Current Features (Beta v1.5.6)
+## Current Features (Beta v1.5.7)
 
 | Feature | Status | Description |
 |---------|--------|-------------|
@@ -72,7 +72,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 
 ## Download
 
-👉 **[Download DACx v1.5.6 APK](https://github.com/DAC-web3/dacx/releases/latest)**
+👉 **[Download DACx v1.5.7 APK](https://github.com/DAC-web3/dacx/releases/tag/v1.5.7)**
 
 Or download from the official website: **[dacnetwork.io](https://dacnetwork.io)**
 
@@ -130,7 +130,7 @@ xID
 | Activity | rutaX | 🔄 IN DEVELOPMENT — Devnet API live |
 | Physical | DAC Smart Systems | 🔬 RESEARCH |
 | Social | DACmeta | 📋 PLANNED |
-| **Communication** | **DACx** | **✅ BETA v1.5.6** |
+| **Communication** | **DACx** | **✅ BETA v1.5.7** |
 | Economic | $DAC | ✅ LIVE — Solana Mainnet |
 
 ---
@@ -139,7 +139,7 @@ xID
 
 | Phase | Status | Milestones |
 |-------|--------|------------|
-| Phase 0 | ✅ Done | MVP, xID, Android Beta v1.5.6, OTA, Devnet wallet |
+| Phase 0 | ✅ Done | MVP, xID, Android Beta v1.5.7, OTA, Devnet wallet |
 | Phase 1 | 🔄 In progress | 1,000+ xIDs, iOS version, expanded features |
 | Phase 2 | 📋 Planned | Mainnet wallet integration, multi-app xID |
 | Phase 3 | 📋 Planned | E2EE encryption, $DAC payments in chat |
