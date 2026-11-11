@@ -2,7 +2,7 @@
 
 > Ephemeral messaging. Honest about what we store.
 
-**Part of DACnetwork.io** | **Version:** 1.5.10 | **Platform:** Android | **Status:** ✅ Beta Live
+**Part of DACnetwork.io** | **Version:** 1.5.11 | **Platform:** Android | **Status:** ✅ Beta Live
 
 ---
 
@@ -32,7 +32,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 
 ---
 
-## Current Features (Beta v1.5.10)
+## Current Features (Beta v1.5.11)
 
 | Feature | Status | Description |
 |---------|--------|-------------|
@@ -46,7 +46,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 | Hide Home Balance | ✅ Live | Eye toggle on chip — persists |
 | OTA Updates | ✅ Live | Automatic updates — no reinstall needed |
 | PIN Vault | ✅ Live | Required on every app open, memory-only |
-| Biometric unlock | ✅ Live | Fingerprint / face, then PIN — native APK 1.5.10 |
+| Biometric unlock | ✅ Live | Fingerprint / face, then PIN — available in the v1.5.11 APK |
 | Privacy Cover | ✅ Live | App switcher shows only logo |
 | Auto-lock | ✅ Live | Configurable timer (5/15/60 min) |
 | 24 Reactions | ✅ Live | Long-press any message |
@@ -73,19 +73,21 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 
 ## Download
 
-👉 **[Download DACx v1.5.10 APK](https://github.com/DAC-web3/dacx/releases/download/v1.5.10/dacx-1.5.10.apk)**
+👉 **[Download DACx v1.5.11 APK](https://github.com/DAC-web3/dacx/releases/download/v1.5.11/dacx-1.5.11.apk)**
+
+DACx v1.5.11 is the official version and latest downloadable APK.
 
 Latest release page: [github.com/DAC-web3/dacx/releases/latest](https://github.com/DAC-web3/dacx/releases/latest)
 
 Also linked from **[dacnetwork.io](https://dacnetwork.io)**.
 
-SHA-256 (`dacx-1.5.10.apk`):
-`19cb2148426549033598aeb8c51e2e5d6f509c99757c3211c6b379e14206b9d3`
+SHA-256 (`dacx-1.5.11.apk`):
+`db7bbc32582770882f6c2ae52508f146e92de21defb92c0bba82f95fcee260e8`
 
-Install over your existing DACx app. Do not uninstall the existing app or clear its data. Users on 1.5.7 or 1.5.9 must install this APK once for biometric unlock and the current native line.
+Install over your existing DACx app. Do not uninstall the existing app or clear its data. Users on 1.5.7, 1.5.9, or 1.5.10 must install this APK once for biometric unlock and the current native line.
 
 **How to install:**
-1. Download `dacx-1.5.10.apk`
+1. Download `dacx-1.5.11.apk`
 2. Go to Android Settings → Security → Enable "Install unknown apps"
 3. Open the APK and install
 4. Launch DACx and create your xID
@@ -95,17 +97,18 @@ Install over your existing DACx app. Do not uninstall the existing app or clear 
 
 ## OTA Updates
 
-The current native APK is **v1.5.10**. OTA updates apply to that runtime. Install 1.5.10 over 1.5.7 or 1.5.9 to stay on the current line.
+The official DACx version and latest published native APK are **v1.5.11**. OTA updates apply to that APK's runtime. Install the v1.5.11 APK over an existing DACx installation to use the current native line.
 
 | Release | What changed |
 |---------|-------------|
+| v1.5.11 | Official native APK — current UI |
 | v1.5.10 | Native APK — biometric unlock, current UI |
 | v1.5.6-ota-2 | Devnet DAC wallet, hide Home balance |
 | v1.5.6-ota-1 | Security & UI Premium, PIN Vault, 24 reactions |
 | v1.5.6 | Base APK — OTA channel enabled |
 
 **How to update:**
-Install `dacx-1.5.10.apk` if you are not already on 1.5.10. Then open DACx → Settings → Check for updates → Restart.
+Install the latest downloadable APK, `dacx-1.5.11.apk`, if you are not already running it. Then open DACx → Settings → Check for updates → Restart.
 
 ---
 
@@ -138,7 +141,7 @@ xID
 | Activity | rutaX | 🔄 IN DEVELOPMENT — Devnet API live |
 | Physical | DAC Smart Systems | 🔬 RESEARCH |
 | Social | DACmeta | 📋 PLANNED |
-| **Communication** | **DACx** | **✅ BETA v1.5.10** |
+| **Communication** | **DACx** | **✅ BETA v1.5.11** |
 | Economic | $DAC | ✅ LIVE — Solana Mainnet |
 
 ---
@@ -147,7 +150,7 @@ xID
 
 | Phase | Status | Milestones |
 |-------|--------|------------|
-| Phase 0 | ✅ Done | MVP, xID, Android Beta v1.5.10, OTA, Devnet wallet |
+| Phase 0 | ✅ Done | MVP, xID, Android Beta v1.5.11, OTA, Devnet wallet |
 | Phase 1 | 🔄 In progress | 1,000+ xIDs, iOS version, expanded features |
 | Phase 2 | 📋 Planned | Mainnet wallet integration, multi-app xID |
 | Phase 3 | 📋 Planned | E2EE encryption, $DAC payments in chat |
