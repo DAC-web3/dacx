@@ -40,7 +40,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 | Message Requests | ✅ Live | Add by QR or xID; they accept or ignore |
 | Ephemeral Messages | ✅ Live | Disappear 3 minutes after read/view |
 | Devnet Wallet | ✅ Live | On-device Solana key — 12-word seed phrase |
-| Wallet Restore | ✅ Live | Restore with your recovery phrase; choose a new PIN on a new phone |
+| Wallet Restore | ✅ Live | Restore on a new phone with your recovery phrase, choose a new PIN, and keep your Solana address |
 | DAC Balance | ✅ Live | Devnet DAC (Token-2022) visible in wallet |
 | Send DAC / SOL | ✅ Live | Separate tabs in wallet screen |
 | Hide Home Balance | ✅ Live | Eye toggle on chip — persists |
