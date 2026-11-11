@@ -2,7 +2,7 @@
 
 > Ephemeral messaging. Honest about what we store.
 
-**Part of DACnetwork.io** | **Version:** 1.5.10 | **Platform:** Android | **Status:** ✅ Beta Live
+**Part of DACnetwork.io** | **Version:** 1.5.11 | **Platform:** Android | **Status:** ✅ Beta Live
 
 ---
 
@@ -32,7 +32,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 
 ---
 
-## Current Features (Beta v1.5.10)
+## Current Features (Beta v1.5.11)
 
 | Feature | Status | Description |
 |---------|--------|-------------|
@@ -75,6 +75,8 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 
 👉 **[Download DACx v1.5.10 APK](https://github.com/DAC-web3/dacx/releases/download/v1.5.10/dacx-1.5.10.apk)**
 
+DACx v1.5.11 is the official version. The latest APK published in GitHub Releases is still v1.5.10; the download link and checksum below identify that existing APK.
+
 Latest release page: [github.com/DAC-web3/dacx/releases/latest](https://github.com/DAC-web3/dacx/releases/latest)
 
 Also linked from **[dacnetwork.io](https://dacnetwork.io)**.
@@ -95,7 +97,7 @@ Install over your existing DACx app. Do not uninstall the existing app or clear 
 
 ## OTA Updates
 
-The current native APK is **v1.5.10**. OTA updates apply to that runtime. Install 1.5.10 over 1.5.7 or 1.5.9 to stay on the current line.
+The latest published native APK is **v1.5.10**. OTA updates apply to that runtime. Install 1.5.10 over 1.5.7 or 1.5.9 to stay on the current published line.
 
 | Release | What changed |
 |---------|-------------|
@@ -138,7 +140,7 @@ xID
 | Activity | rutaX | 🔄 IN DEVELOPMENT — Devnet API live |
 | Physical | DAC Smart Systems | 🔬 RESEARCH |
 | Social | DACmeta | 📋 PLANNED |
-| **Communication** | **DACx** | **✅ BETA v1.5.10** |
+| **Communication** | **DACx** | **✅ BETA v1.5.11** |
 | Economic | $DAC | ✅ LIVE — Solana Mainnet |
 
 ---
@@ -147,7 +149,7 @@ xID
 
 | Phase | Status | Milestones |
 |-------|--------|------------|
-| Phase 0 | ✅ Done | MVP, xID, Android Beta v1.5.10, OTA, Devnet wallet |
+| Phase 0 | ✅ Done | MVP, xID, Android Beta v1.5.11, OTA, Devnet wallet |
 | Phase 1 | 🔄 In progress | 1,000+ xIDs, iOS version, expanded features |
 | Phase 2 | 📋 Planned | Mainnet wallet integration, multi-app xID |
 | Phase 3 | 📋 Planned | E2EE encryption, $DAC payments in chat |
