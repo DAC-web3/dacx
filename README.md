@@ -40,13 +40,13 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 | Message Requests | ✅ Live | Add by QR or xID; they accept or ignore |
 | Ephemeral Messages | ✅ Live | Disappear 3 minutes after read/view |
 | Devnet Wallet | ✅ Live | On-device Solana key — 12-word seed phrase |
-| Wallet Restore | ✅ Live | Same or new xID, same Solana address |
+| Wallet Restore | ✅ Live | Restore on a new phone with your recovery phrase, choose a new PIN, and keep your Solana address |
 | DAC Balance | ✅ Live | Devnet DAC (Token-2022) visible in wallet |
 | Send DAC / SOL | ✅ Live | Separate tabs in wallet screen |
 | Hide Home Balance | ✅ Live | Eye toggle on chip — persists |
 | OTA Updates | ✅ Live | Automatic updates — no reinstall needed |
 | PIN Vault | ✅ Live | Required on every app open, memory-only |
-| Biometric unlock | ✅ Live | Fingerprint / face, then PIN — available in the v1.5.11 APK |
+| Biometric unlock | ✅ Live | Device-protected key with PIN fallback |
 | Privacy Cover | ✅ Live | App switcher shows only logo |
 | Auto-lock | ✅ Live | Configurable timer (5/15/60 min) |
 | 24 Reactions | ✅ Live | Long-press any message |
@@ -70,6 +70,16 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 - Old accounts still use xID + PIN (not seed phrase)
 
 ---
+
+## What's new in DACx 1.5.11
+
+DACx v1.5.11 is now available. This Android release strengthens wallet access protection and makes recovery on a new phone easier.
+
+- **Biometric wallet unlock:** Uses a separate, randomly generated key protected by your device's native security features. Your PIN remains available for sign-in and as a fallback. If your enrolled biometrics change, sign in with your PIN and enable biometric unlock again.
+- **Wallet recovery:** Restore your wallet on a new phone with your recovery phrase and choose a new PIN. Existing sessions are revoked as part of the recovery process.
+- **Safer wallet migration:** Existing wallet data is migrated locally to an improved key-derivation profile. The original encrypted data is preserved until the updated data has been written and verified.
+
+**Keep your recovery phrase private and secure.** Never share it, including with support. Enter it only in the official DACx app when you initiate recovery.
 
 ## Download
 
@@ -101,7 +111,7 @@ The official DACx version and latest published native APK are **v1.5.11**. OTA u
 
 | Release | What changed |
 |---------|-------------|
-| v1.5.11 | Official native APK — current UI |
+| v1.5.11 | Device-protected biometric wallet unlock, new-phone recovery, safer wallet-data migration |
 | v1.5.10 | Native APK — biometric unlock, current UI |
 | v1.5.6-ota-2 | Devnet DAC wallet, hide Home balance |
 | v1.5.6-ota-1 | Security & UI Premium, PIN Vault, 24 reactions |
