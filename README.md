@@ -46,7 +46,7 @@ If you are a developer interested in contributing to DACx, fill in the [Collabor
 | Hide Home Balance | ✅ Live | Eye toggle on chip — persists |
 | OTA Updates | ✅ Live | Automatic updates — no reinstall needed |
 | PIN Vault | ✅ Live | Required on every app open, memory-only |
-| Biometric unlock | ✅ Live | Fingerprint / face, then PIN — native APK 1.5.10 |
+| Biometric unlock | ✅ Live | Fingerprint / face, then PIN — available in the latest published APK (v1.5.10) |
 | Privacy Cover | ✅ Live | App switcher shows only logo |
 | Auto-lock | ✅ Live | Configurable timer (5/15/60 min) |
 | 24 Reactions | ✅ Live | Long-press any message |
@@ -97,7 +97,7 @@ Install over your existing DACx app. Do not uninstall the existing app or clear 
 
 ## OTA Updates
 
-The latest published native APK is **v1.5.10**. OTA updates apply to that runtime. Install 1.5.10 over 1.5.7 or 1.5.9 to stay on the current published line.
+The official DACx version is **v1.5.11**, but the latest published native APK is **v1.5.10**. OTA updates apply to that APK's runtime. Install the v1.5.10 APK over 1.5.7 or 1.5.9 to use the latest published build.
 
 | Release | What changed |
 |---------|-------------|
@@ -107,7 +107,7 @@ The latest published native APK is **v1.5.10**. OTA updates apply to that runtim
 | v1.5.6 | Base APK — OTA channel enabled |
 
 **How to update:**
-Install `dacx-1.5.10.apk` if you are not already on 1.5.10. Then open DACx → Settings → Check for updates → Restart.
+Install the latest downloadable APK, `dacx-1.5.10.apk`, if you are not already running it. Then open DACx → Settings → Check for updates → Restart.
 
 ---
 
