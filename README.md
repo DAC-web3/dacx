@@ -82,9 +82,9 @@ Latest release page: [github.com/DAC-web3/dacx/releases/latest](https://github.c
 Also linked from **[dacnetwork.io](https://dacnetwork.io)**.
 
 SHA-256 (`dacx-1.5.11.apk`):
-`db7bbc32582770882f6c2ae52508f146e92de21defb92c0bba82f95fcee260e8`
+`9b09d4695e9523988faf3068fbb778a0fb89c7b8f3bf83ae11af3154907bc5ce`
 
-Install over your existing DACx app. Do not uninstall the existing app or clear its data. Users on 1.5.7, 1.5.9, or 1.5.10 must install this APK once for biometric unlock and the current native line.
+Install over your existing DACx app. Do not uninstall the existing app or clear its data. Users on older APKs—including the previous v1.5.11 build—must install this replacement APK manually before relying on unsigned OTA updates.
 
 **How to install:**
 1. Download `dacx-1.5.11.apk`
@@ -97,18 +97,18 @@ Install over your existing DACx app. Do not uninstall the existing app or clear 
 
 ## OTA Updates
 
-The official DACx version and latest published native APK are **v1.5.11**. OTA updates apply to that APK's runtime. Install the v1.5.11 APK over an existing DACx installation to use the current native line.
+The official DACx version and latest published native APK are **v1.5.11** (`versionCode: 2`). OTA updates apply to runtime 1.5.11. Older APKs, including an earlier v1.5.11 build, may reject unsigned OTA updates; install the replacement APK over the existing app without clearing its data.
 
 | Release | What changed |
 |---------|-------------|
 | v1.5.11 | Official native APK — current UI |
-| v1.5.10 | Native APK — biometric unlock, current UI |
+| Historical v1.5.10 | Previous native APK — not the current release |
 | v1.5.6-ota-2 | Devnet DAC wallet, hide Home balance |
 | v1.5.6-ota-1 | Security & UI Premium, PIN Vault, 24 reactions |
 | v1.5.6 | Base APK — OTA channel enabled |
 
 **How to update:**
-Install the latest downloadable APK, `dacx-1.5.11.apk`, if you are not already running it. Then open DACx → Settings → Check for updates → Restart.
+If you are not on the replacement v1.5.11 APK (`versionCode: 2`), install it manually from the release page. Then open DACx → Settings → Check for updates → Restart. Future same-semver APK replacements are detected through the Android versionCode metadata in release notes.
 
 ---
 
